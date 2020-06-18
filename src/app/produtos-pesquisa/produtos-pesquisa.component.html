@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Pesquisa Produtos</h1>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+      <label>Nome</label>
+      <input type="text" pInputText>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+      <label>Marca</label>
+      <input type="text" pInputText>
+    </div>
+
+    <div class="ui-g-12 ui-md-6 ui-fluid">
+      <label>Categoria</label>
+      <p-dropdown [options]="categorias" placeholder="Selecione" [filter]="false" ngModel required></p-dropdown>
+    </div>
+
+    <div class="ui-g-12 ui-md-6 ui-fluid">
+      <label>Cor</label>
+      <p-dropdown [options]="cores" placeholder="Selecione" [filter]="true" ngModel required></p-dropdown>
+    </div>
+
+    <div class="ui-g-6 ui-md-3 ui-fluid">
+      <label>Medida</label>
+      <p-dropdown [options]="medidas" placeholder="Selecione" [filter]="false" ngModel required></p-dropdown>
+    </div>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <a pButton label="Novo Produto"></a>
+    </div>
+  </div>
+</div>

@@ -22,13 +22,17 @@ import { AppComponent } from './app.component';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 import { MessageComponent } from './message/message.component';
 import { FormsModule } from '@angular/forms';
+import { ProdutosPesquisaComponent } from './produtos-pesquisa/produtos-pesquisa.component';
+import { ProdutosGridComponent } from './produtos-grid/produtos-grid.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroClienteComponent,
-    MessageComponent
+    MessageComponent,
+    ProdutosPesquisaComponent,
+    ProdutosGridComponent
   ],
   imports: [
     BrowserModule,
