@@ -1,0 +1,106 @@
+<div class="container">
+  <form autocomplete="off" #cadastroClienteForm="ngForm">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <h1>Novo Cliente</h1>
+      </div>
+
+      <div class="ui-g-12">
+        <p-selectButton [options]="tipos" #tipo></p-selectButton>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Nome</label>
+        <input pInputText type="text" name="nome" ngModel #nome="ngModel" required minlength="3">
+        <app-message [control]="nome" error="required" text="Informe seu primeiro nome"></app-message>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Sobrenome</label>
+        <input pInputText type="text" name="sobrenome" ngModel #sobrenome="ngModel" required minlength="3">
+        <app-message [control]="sobrenome" error="required" text="Informe seu sobrenome"></app-message>
+      </div>
+
+      <div class="ui-g-6 ui-fluid" [class.has-danger]="emailAdress.invalid && emailAdress.touched">
+        <label>E-mail</label>
+        <input pInputText type="email" name="emailAdress" ngModel #emailAdress="ngModel" required>
+        <app-message [control]="emailAdress" error="required" text="Informe o email."></app-message>
+      </div>
+
+      <div class="ui-g-6 ui-md-3 ui-fluid">
+        <label>{{ tipo.value === 'JURIDICA' ? 'CNPJ' : 'CPF'}}</label>
+        <input pInputText type="text" name="tipoPessoa" ngModel #tipoPessoa="ngModel" required minlength="11">
+        <app-message [control]="tipoPessoa" error="required" text="Informe o número do documento."></app-message>
+      </div>
+
+
+      <div class="ui-g-6 ui-md-3 ui-fluid">
+        <label>Telefone</label>
+        <p-inputMask mask="(99)99999-9999" name="telefone" ngModel #telefone="ngModel" required>
+          <app-message [control]="telefone" error="required" text="Informe o telefone."></app-message>
+        </p-inputMask>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Senha</label>
+        <input pInputText type="text" name="senha" ngModel #senha="ngModel" required minlength="8">
+        <app-message [control]="senha" error="required" text="Informe a senha"></app-message>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Confirmação Senha</label>
+        <input pInputText type="text" name="senha" ngModel #senha="ngModel" required minlength="8">
+        <app-message [control]="senha" error="required" text="Confirme sua senha"></app-message>
+      </div>
+
+
+      <div class="ui-g-9 ui-fluid">
+        <label>Logradouro</label>
+        <input pInputText type="text" name="logradouro" ngModel #logradouro="ngModel" required>
+        <app-message [control]="logradouro" error="required" text="Informe o logradouro."></app-message>
+      </div>
+
+      <div class="ui-g-3 ui-fluid">
+        <label>Número</label>
+        <input pInputText type="text" name="numero" ngModel #numero="ngModel" required>
+        <app-message [control]="numero" error="required" text="Informe o numero."></app-message>
+      </div>
+
+      <div class="ui-g-4 ui-fluid">
+        <label>Complemento</label>
+        <input pInputText type="text">
+      </div>
+
+      <div class="ui-g-4 ui-fluid">
+        <label>Bairro</label>
+        <input pInputText type="text" name="bairro" ngModel #bairro="ngModel" required>
+        <app-message [control]="bairro" error="required" text="Informe o bairro."></app-message>
+      </div>
+
+      <div class="ui-g-4 ui-fluid">
+        <label>CEP</label>
+        <p-inputMask mask="99.999-999" name="cep" ngModel #cep="ngModel" required>
+          <app-message [control]="cep" error="required" text="Informe o CEP."></app-message>
+        </p-inputMask>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Cidade</label>
+        <input pInputText type="text" name="cidade" ngModel #cidade="ngModel" required>
+        <app-message [control]="cidade" error="required" text="Informe a cidade."></app-message>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Estado</label>
+        <input pInputText type="text" name="estado" ngModel #estado="ngModel" required>
+        <app-message [control]="estado" error="required" text="Informe o Estado."></app-message>
+      </div>
+
+      <div class="ui-g-12">
+        <button pButton type="submit" label="Salvar" [disabled]="cadastroClienteForm.invalid"></button>
+        <button pButton type="button" label="Novo" class="ui-button-info"></button>
+        <a href="javascripc:;">Voltar para a pesquisa</a>
+      </div>
+    </div>
+  </form>
+</div>

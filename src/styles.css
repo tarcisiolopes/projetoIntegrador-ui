@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  font-family: Arial, Verdana, sans-serif;
+  color: #404c51;
+}
+
+a{
+  text-decoration: none;
+  color: 337ab7;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+label {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
