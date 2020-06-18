@@ -24,6 +24,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "projetointegrador"
+    }
+  },
+  "defaultProject": "projetointegrador",
+  "cli": {
+    "analytics": "ca4ebccb-13b2-4df1-a37a-2984a9847959"
+  }
 }
