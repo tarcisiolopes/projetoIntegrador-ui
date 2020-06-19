@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Pesquisa Clientes</h1>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+      <label>Nome</label>
+      <input type="text" pInputText>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+      <label>Sobrenome</label>
+      <input type="text" pInputText>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+      <label>Tipo Cliente</label>
+      <p-dropdown [options]="tipos" placeholder="Selecione" [filter]="false"></p-dropdown>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+      <label>E-mail</label>
+      <input type="text" pInputText>
+    </div>
+
+  <div class="ui-g">
+
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <a pButton label="Novo Cliente"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
