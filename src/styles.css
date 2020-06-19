@@ -24,3 +24,7 @@ label {
   }
 }
 
+.col-acoes {
+  width: 70px;
+  justify-items: auto;
+}

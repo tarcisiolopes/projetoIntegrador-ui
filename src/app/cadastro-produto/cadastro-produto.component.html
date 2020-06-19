@@ -1,0 +1,51 @@
+<div class="container">
+  <form autocomplete="off" #cadastroProdutoForm="ngForm">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <h1>Novo Produto</h1>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Nome</label>
+        <input pInputText type="text" name="nome" ngModel #nome="ngModel" required>
+        <app-message [control]="nome" error="required" text="Informe seu primeiro nome"></app-message>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Marca</label>
+        <input pInputText type="text" name="marca" ngModel #marca="ngModel" required>
+        <app-message [control]="marca" error="required" text="Informe a marca"></app-message>
+      </div>
+
+      <div class="ui-g-12 ui-fluid">
+        <label>Descrição</label>
+        <input pInputText type="text" name="descricao" ngModel #descricao="ngModel">
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Cor</label>
+        <p-dropdown [options]="cores" placeholder="Selecione" [filter]="true" required></p-dropdown>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Medida</label>
+        <p-dropdown [options]="medidas" placeholder="Selecione" [filter]="false" required></p-dropdown>
+      </div>
+
+      <div class="ui-g-6 ui-fluid">
+        <label>Preço</label>
+        <p-inputNumber mode="currency" currency="USD" locale="en-US" placeholder="Informe o valor" name="valor" ngModel
+          required>
+        </p-inputNumber>
+      </div>
+
+      <div class="ui-g-12">
+        <button pButton type="submit" label="Salvar" [disabled]="cadastroProdutoForm.invalid"></button>
+        <button pButton type="button" label="Novo" class="ui-button-info"></button>
+        <a href="javascripc:;">Voltar para a pesquisa</a>
+      </div>
+
+
+    </div>
+  </form>
+</div>

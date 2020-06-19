@@ -24,6 +24,7 @@ import { MessageComponent } from './message/message.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosPesquisaComponent } from './produtos-pesquisa/produtos-pesquisa.component';
 import { ProdutosGridComponent } from './produtos-grid/produtos-grid.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ProdutosGridComponent } from './produtos-grid/produtos-grid.component';
     CadastroClienteComponent,
     MessageComponent,
     ProdutosPesquisaComponent,
-    ProdutosGridComponent
+    ProdutosGridComponent,
+    CadastroProdutoComponent
   ],
   imports: [
     BrowserModule,
