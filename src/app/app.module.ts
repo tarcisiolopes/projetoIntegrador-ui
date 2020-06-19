@@ -29,6 +29,7 @@ import { CategoriaPesquisaComponent } from './categoria-pesquisa/categoria-pesqu
 import { CategoriasGridComponent } from './categorias-grid/categorias-grid.component';
 import { CadastroCategoriaComponent } from './cadastro-categoria/cadastro-categoria.component';
 import { ClientePesquisaComponent } from './cliente-pesquisa/cliente-pesquisa.component';
+import { ClientesGridComponent } from './clientes-grid/clientes-grid.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ClientePesquisaComponent } from './cliente-pesquisa/cliente-pesquisa.co
     CategoriaPesquisaComponent,
     CategoriasGridComponent,
     CadastroCategoriaComponent,
-    ClientePesquisaComponent
+    ClientePesquisaComponent,
+    ClientesGridComponent
   ],
   imports: [
     BrowserModule,
