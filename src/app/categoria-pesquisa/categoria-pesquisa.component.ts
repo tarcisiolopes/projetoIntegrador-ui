@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CategoriaPesquisaComponent implements OnInit {
 
   categorias = [
-    { label: 'Camisas', value: '1'},
-    { label: 'Camisetas', value: '2'},
-    { label: 'Blusa', value: '3'},
+    { nome: 'Camisas', value: '1'},
+    { nome: 'Camisetas', value: '2'},
+    { nome: 'Blusa', value: '3'},
   ];
 
   constructor() { }
