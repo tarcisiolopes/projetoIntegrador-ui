@@ -27,6 +27,7 @@ import { ProdutosGridComponent } from './produtos-grid/produtos-grid.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { CategoriaPesquisaComponent } from './categoria-pesquisa/categoria-pesquisa.component';
 import { CategoriasGridComponent } from './categorias-grid/categorias-grid.component';
+import { CadastroCategoriaComponent } from './cadastro-categoria/cadastro-categoria.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { CategoriasGridComponent } from './categorias-grid/categorias-grid.compo
     ProdutosGridComponent,
     CadastroProdutoComponent,
     CategoriaPesquisaComponent,
-    CategoriasGridComponent
+    CategoriasGridComponent,
+    CadastroCategoriaComponent
   ],
   imports: [
     BrowserModule,
